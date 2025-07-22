@@ -2,8 +2,8 @@
 Fundamentos-Linguagens-UFC/
 │
 ├── README.md                         
-|Este repositório reúne a resolução dos 14 desafios propostos na disciplina de Linguagens de Programação, com foco na aplicação prática dos principais conceitos estudados ao longo do curso.
-|Cada desafio aborda um tema fundamental da área, explorado de forma autorais, criativa e contextualizada, utilizando diferentes linguagens de programação e formas de apresentação, como textos explicativos, códigos, diagramas, quadros |comparativos e scripts.
+Este repositório reúne a resolução dos 14 desafios propostos na disciplina de Linguagens de Programação, com foco na aplicação prática dos principais conceitos estudados ao longo do curso.
+Cada desafio aborda um tema fundamental da área, explorado de forma autorais, criativa e contextualizada, utilizando diferentes linguagens de programação e formas de apresentação, como textos explicativos, códigos, diagramas, quadros comparativos e scripts.
 │
 ├── 01-introducao/                      --> README.md com linha do tempo da evolução das linguagens
 │
