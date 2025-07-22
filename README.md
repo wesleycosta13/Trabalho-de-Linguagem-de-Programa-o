@@ -40,6 +40,23 @@ Cada desafio aborda um tema fundamental da área, explorado de forma autorais, c
 ![Diagrama do sistema](Diagrama.jpeg)
 ├── 03-sintaxe-semantica/              --> README.md + mini-gramática fictícia com análise léxica
 │
+🌱 Linguagem Inventada: MinimaLang
+
+Uma linguagem criada pra ser fácil de entender até pra quem nunca programou. Só 3 comandos principais: guardar, mostrar e somar.
+
+Regras da Linguagem
+guarda nome tipo → declara uma variável (tipo pode ser número ou texto)
+
+nome recebe valor → atribui valor à variável
+
+mostra nome → exibe a variável
+
+soma nome1 e nome2 → soma duas variáveis numéricas
+
+SomaNome = nome1 + Nome2 
+
+mostra nome = SomaNome
+
 
 ├── 04-tipos-de-dados/                 --> README.md + comparativo entre tipos de dados em 3 linguagens
 │
