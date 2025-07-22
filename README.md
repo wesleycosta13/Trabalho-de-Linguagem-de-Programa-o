@@ -37,7 +37,7 @@ Cada desafio aborda um tema fundamental da área, explorado de forma autorais, c
 
 ├── 02-ambientes/                       --> README.md + diagramas de compiladores, interpretadores e VMs
 │
-
+![Diagrama do sistema](Diagrama.jpeg)
 ├── 03-sintaxe-semantica/              --> README.md + mini-gramática fictícia com análise léxica
 │
 
