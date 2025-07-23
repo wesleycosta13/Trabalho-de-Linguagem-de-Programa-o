@@ -117,6 +117,58 @@ int main() {
 
 ├── 06-subprogramas/                   --> README.md + funções com passagem por valor e referência
 │
+1. Passagem por referência em C (com ponteiro)
+c
+Copiar
+Editar
+#include <stdio.h>
+
+// Função que troca o valor de duas variáveis usando ponteiros (passagem por referência)
+void troca(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int x = 5, y = 10;
+
+    printf("Antes da troca: x = %d, y = %d\n", x, y);
+    troca(&x, &y);
+    printf("Depois da troca: x = %d, y = %d\n", x, y);
+
+    return 0;
+}
+Explicação:
+Aqui, a função troca recebe os endereços (&x e &y), então ela consegue alterar diretamente os valores das variáveis originais — isso é passagem por referência em C.
+
+
+2. Passagem por valor em Java (para tipos primitivos)
+java
+Copiar
+Editar
+public class PassagemPorValor {
+    
+    // Função que tenta trocar os valores, mas não altera os originais
+    public static void troca(int a, int b) {
+        int temp = a;
+        a = b;
+        b = temp;
+        System.out.println("Dentro da função troca: a = " + a + ", b = " + b);
+    }
+
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 10;
+
+        System.out.println("Antes da troca: x = " + x + ", y = " + y);
+        troca(x, y);
+        System.out.println("Depois da troca: x = " + x + ", y = " + y);
+    }
+}
+Explicação:
+Aqui, troca recebe cópias dos valores de x e y. Alterar a e b dentro da função não muda x e y no main, pois Java passa parâmetros por valor para tipos primitivos.
+
 
 ├── 07-implementacao-subprogramas/     --> README.md + explicação e desenho da pilha de chamadas (recursão)
 │
