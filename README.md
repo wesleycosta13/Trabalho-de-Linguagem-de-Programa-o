@@ -60,6 +60,19 @@ mostra nome = SomaNome
 
 ├── 04-tipos-de-dados/                 --> README.md + comparativo entre tipos de dados em 3 linguagens
 │
+📚 Tipos de Dados: Comparando C, Java e C#
+
+🔹 Linguagem C
+
+A linguagem C possui tipagem estática, ou seja, os tipos das variáveis são definidos em tempo de compilação. No entanto, sua tipagem é considerada fraca, pois permite muitas conversões implícitas entre tipos diferentes, mesmo que isso possa causar comportamentos inesperados ou erros de execução. Por exemplo, é possível forçar a conversão de uma string para um inteiro com type casting, mesmo que o valor não seja compatível.
+
+🔹 Linguagem Java
+
+Java utiliza tipagem estática e forte. Os tipos das variáveis devem ser declarados, e o compilador verifica se os tipos estão corretos antes de rodar o programa. Não permite conversões implícitas arriscadas. Se você tentar atribuir uma string a uma variável inteira, o código nem vai compilar. Isso torna o código mais seguro e previsível.
+
+🔹 Linguagem C#
+
+C# também possui tipagem estática e forte, mas oferece uma sintaxe mais moderna com suporte a inferência de tipo por meio da palavra-chave var. Mesmo com var, o tipo ainda é determinado em tempo de compilação e não pode ser alterado depois. Como em Java, conversões implícitas perigosas não são permitidas.
 
 ├── 05-estruturas-de-controle/         --> README.md + código com estruturas de controle em contexto original
 │
