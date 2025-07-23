@@ -77,6 +77,44 @@ C# também possui tipagem estática e forte, mas oferece uma sintaxe mais modern
 ├── 05-estruturas-de-controle/         --> README.md + código com estruturas de controle em contexto original
 │
 
+#include <stdio.h>
+
+int main() {
+    int numeroSecreto = 7;  // número fixo para simplificar
+    int palpite;
+
+    printf("Jogo de Adivinhacao\n");
+    printf("Tente adivinhar o numero entre 1 e 10.\n");
+    printf("Digite 0 para desistir.\n\n");
+
+    while (1) {
+        printf("Seu palpite: ");
+        scanf("%d", &palpite);
+
+        if (palpite == 0) {
+            printf("Voce desistiu do jogo. Ate mais!\n");
+            break;  // sai do loop
+        }
+
+        if (palpite < 1 || palpite > 10) {
+            printf("Palpite invalido. Tente um numero entre 1 e 10.\n");
+            continue; // volta para o começo do loop
+        }
+
+        if (palpite == numeroSecreto) {
+            printf("Parabens! Voce acertou o numero secreto!\n");
+            break;  // termina o jogo
+        } else if (palpite < numeroSecreto) {
+            printf("O numero secreto e maior. Tente de novo.\n");
+        } else {
+            printf("O numero secreto e menor. Tente de novo.\n");
+        }
+    }
+
+    return 0;
+}
+
+
 ├── 06-subprogramas/                   --> README.md + funções com passagem por valor e referência
 │
 
