@@ -314,6 +314,10 @@ Neste código, a primeira thread imprime números de 1 a 5 e a segunda imprime l
 ├── 10-gerenciamento-memoria/          --> README.md + quadro comparativo entre dois modelos de memória
 │
 
+![Pilhas do sistema](quadro.jpg)
+
+
+
 ├── 11-programacao-funcional/          --> README.md + código com recursão e funções de alta ordem
 │
 
