@@ -198,6 +198,63 @@ fatorial(3) → 6
 
 ├── 08-orientacao-objetos/             --> README.md + modelagem de classes com herança e polimorfismo
 │
+![Classes](Classes.jpg)
+
+🚗 Hierarquia: Transporte → Carro / Bicicleta
+java
+
+// Classe base
+public class Transporte {
+    protected String marca;
+    protected String modelo;
+
+    public Transporte(String marca, String modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+
+    public void mover() {
+        System.out.println(marca + " " + modelo + " está se movendo.");
+    }
+}
+
+public class Carro extends Transporte {
+    private int portas;
+
+    public Carro(String marca, String modelo, int portas) {
+        super(marca, modelo);
+        this.portas = portas;
+    }
+
+    @Override
+    public void mover() {
+        System.out.println("O carro " + marca + " " + modelo + " está dirigindo na estrada.");
+    }
+}
+
+public class Bicicleta extends Transporte {
+    private int marchas;
+
+    public Bicicleta(String marca, String modelo, int marchas) {
+        super(marca, modelo);
+        this.marchas = marchas;
+    }
+
+    @Override
+    public void mover() {
+        System.out.println("A bicicleta " + marca + " " + modelo + " está pedalando.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Carro carro = new Carro("Toyota", "Corolla", 4);
+        Bicicleta bike = new Bicicleta("Caloi", "Elite", 21);
+
+        carro.mover(); // O carro Toyota Corolla está dirigindo na estrada.
+        bike.mover();  // A bicicleta Caloi Elite está pedalando.
+    }
+}
 
 ├── 09-concorrencia/                   --> README.md + explicação de threads/processos + exemplo prático
 │
