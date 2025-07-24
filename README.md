@@ -259,6 +259,58 @@ public class Main {
 ├── 09-concorrencia/                   --> README.md + explicação de threads/processos + exemplo prático
 │
 
+Diferença entre processos e threads
+
+Um processo é um programa que está em execução, com seu próprio espaço de memória isolado. Já uma thread é uma unidade menor de execução dentro do processo, que compartilha a mesma memória com as outras threads do mesmo processo. Por isso, criar e gerenciar threads é mais leve do que criar processos.
+
+Outra diferença importante é que a comunicação entre processos é mais complexa e lenta, enquanto threads conseguem compartilhar informações de forma direta porque estão no mesmo espaço de memória. Porém, como as threads compartilham memória, um problema em uma pode afetar o funcionamento das outras.
+
+Exemplo prático de concorrência usando threads em Java
+Aqui tem um exemplo simples em que duas threads executam tarefas diferentes ao mesmo tempo:
+
+public class ConcorrenciaExemplo {
+
+    public static void main(String[] args) {
+
+        Thread thread1 = new Thread(() -> {
+            for (int i = 1; i <= 5; i++) {
+                System.out.println("Thread 1: " + i);
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        Thread thread2 = new Thread(() -> {
+            for (char c = 'A'; c <= 'E'; c++) {
+                System.out.println("Thread 2: " + c);
+                try {
+                    Thread.sleep(700);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        thread1.start();
+        thread2.start();
+
+        try {
+            thread1.join();
+            thread2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("Execução finalizada.");
+    }
+}
+
+Neste código, a primeira thread imprime números de 1 a 5 e a segunda imprime letras de A a E. Como elas rodam ao mesmo tempo, as mensagens aparecem misturadas na saída, mostrando a concorrência. O programa só termina depois que as duas threads terminam suas tarefas.
+
+
 ├── 10-gerenciamento-memoria/          --> README.md + quadro comparativo entre dois modelos de memória
 │
 
