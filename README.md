@@ -173,6 +173,29 @@ Aqui, troca recebe cópias dos valores de x e y. Alterar a e b dentro da funçã
 ├── 07-implementacao-subprogramas/     --> README.md + explicação e desenho da pilha de chamadas (recursão)
 │
 
+🧮 Código Base
+python
+
+def fatorial(n):
+
+    if n == 0:
+
+        return 1
+
+    else:
+
+        return n * fatorial(n - 1)
+
+fatorial(3)
+
+![Pilhas do sistema](Pilhas.jpg)
+
+
+Resultado Final
+python
+
+fatorial(3) → 6
+
 ├── 08-orientacao-objetos/             --> README.md + modelagem de classes com herança e polimorfismo
 │
 
