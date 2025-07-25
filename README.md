@@ -321,6 +321,59 @@ Neste código, a primeira thread imprime números de 1 a 5 e a segunda imprime l
 ├── 11-programacao-funcional/          --> README.md + código com recursão e funções de alta ordem
 │
 
+Problema:
+
+Calcular a média de idades das pessoas maiores de 18 anos.
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+class Pessoa {
+    String nome;
+    int idade;
+
+    Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+}
+
+public class MediaIdadeFuncional {
+
+    public static void main(String[] args) {
+        List<Pessoa> pessoas = Arrays.asList(
+            new Pessoa("João", 15),
+            new Pessoa("Maria", 22),
+            new Pessoa("Pedro", 30),
+            new Pessoa("Ana", 17),
+            new Pessoa("Carlos", 45)
+        );
+
+        // Função de alta ordem: filtra pessoas com idade > 18
+        List<Pessoa> maioresDeIdade = pessoas.stream()
+                .filter(p -> p.idade > 18)
+                .collect(Collectors.toList());
+
+        // Função recursiva para somar idades
+        int soma = somarIdadesRecursivo(maioresDeIdade, 0);
+
+        double media = maioresDeIdade.isEmpty() ? 0.0 : (double) soma / maioresDeIdade.size();
+
+        System.out.printf("Média das idades (maiores de 18): %.2f%n", media);
+    }
+
+    // Função recursiva
+    public static int somarIdadesRecursivo(List<Pessoa> lista, int index) {
+        if (index >= lista.size()) return 0;
+        return lista.get(index).idade + somarIdadesRecursivo(lista, index + 1);
+    }
+}
+
+Explicação:
+
+Esta implementação em Java aplica os conceitos da programação funcional com o uso da API de Streams para aplicar uma função de alta ordem (filter), juntamente com uma função recursiva para somar as idades. O problema escolhido simula um cenário real de análise de dados, onde precisamos calcular a média das idades de pessoas maiores de 18 anos, reforçando o uso de abstrações e imutabilidade típicas da programação funcional.
+
 ├── 12-programacao-logica/             --> README.md + problema lógico modelado em estilo Prolog
 │
 
