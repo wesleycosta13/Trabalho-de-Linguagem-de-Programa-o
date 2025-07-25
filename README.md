@@ -377,8 +377,40 @@ Esta implementação em Java aplica os conceitos da programação funcional com 
 ├── 12-programacao-logica/             --> README.md + problema lógico modelado em estilo Prolog
 │
 
+ Objetivo do Codigo:
+
+Modelar um conjunto de fatos e regras para responder a perguntas como:
+
+Quem é pai/mãe de quem?
+
+Quem são os irmãos?
+
+Quem é avô ou avó?
+
+Quem são os descendentes de uma pessoa?
+
+
+![Codigo do Prolong](Prolog.png)
+
+
+Relatório:
+
+Este exemplo modela um sistema de genealogia usando a lógica declarativa inspirada em Prolog. São definidos fatos (como pai, mae, homem, mulher) e regras derivadas (filho, irmao, avo, descendente), que permitem inferir novos conhecimentos por meio de consultas lógicas. Essa abordagem ilustra o paradigma da programação lógica, onde o foco está na descrição do que deve ser resolvido, e não como resolver — sendo ideal para problemas com regras, inferências e relações entre entidades.
+
 ├── 13-scripts-web/                    --> README.md + script de automação ou manipulação de dados
 │
+
+Contexto:
+
+Você tem um arquivo pessoas.json com dados de pessoas (nome, email, idade) e quer criar um script para filtrar só as pessoas cujo email é do domínio "@gmail.com" e salvar em gmailUsers.json.
+
+![Script](Script.png)
+
+![resultados](Resultados.png)
+
+
+Explicação:
+Este script em Node.js realiza a leitura de um arquivo JSON contendo cadastro de pessoas, filtra aqueles cujo email pertence ao domínio "@gmail.com" e grava o resultado em um novo arquivo JSON. É um exemplo clássico de automação e manipulação de dados, usando APIs nativas de sistema de arquivos do Node.js (fs), permitindo integração fácil com sistemas web e pipelines de dados.
 
 └── 14-tendencias/                     --> README.md + análise crítica sobre linguagem emergente
 
