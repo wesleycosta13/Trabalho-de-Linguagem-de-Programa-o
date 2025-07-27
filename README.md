@@ -414,3 +414,52 @@ Este script em Node.js realiza a leitura de um arquivo JSON contendo cadastro de
 
 └── 14-tendencias/                     --> README.md + análise crítica sobre linguagem emergente
 
+🦀 Tendências em Linguagens de Programação — Rust
+Introdução
+
+Rust é uma linguagem de programação relativamente nova, criada com o objetivo de garantir desempenho e segurança, principalmente no desenvolvimento de sistemas. Lançada oficialmente em 2015 pela Mozilla, ela vem ganhando espaço rapidamente entre desenvolvedores que buscam criar aplicações rápidas e seguras, sem depender de um coletor de lixo.
+
+Por que Rust tem se destacado?
+Nos últimos anos, Rust passou a ser adotada por grandes empresas e ganhou bastante visibilidade. Isso acontece porque ela resolve problemas comuns em linguagens mais antigas, como falhas de memória e condições de corrida (race conditions). Além disso, Rust oferece uma experiência de desenvolvimento moderna, com ferramentas robustas e uma comunidade muito ativa.
+
+Principais características
+
+Gerenciamento de memória seguro: Rust evita falhas de segmentação e vazamentos de memória sem usar garbage collector.
+
+Performance comparável ao C e C++: É possível atingir alta eficiência com Rust.
+
+Concorrência sem dor de cabeça: A linguagem foi pensada para evitar erros típicos de programação paralela.
+
+Mensagens de erro claras: O compilador ajuda muito durante o desenvolvimento, explicando bem os problemas encontrados no código.
+
+Vantagens
+
+Segurança de memória em tempo de compilação.
+
+Ausência de coleta de lixo (o que melhora a performance).
+
+Suporte nativo a programação assíncrona (async/await).
+
+Ferramentas modernas, como o cargo, que facilita o gerenciamento de pacotes e dependências.
+
+Pontos de atenção
+
+Aprender Rust pode ser um pouco mais difícil no início, especialmente por causa do sistema de “ownership” e do “borrow checker”.
+
+A linguagem ainda está em processo de amadurecimento em algumas áreas, principalmente no desenvolvimento web, onde outras linguagens como JavaScript ou Go ainda são mais populares.
+
+Onde Rust é mais usado
+
+Desenvolvimento de sistemas embarcados e operacionais.
+
+Programas de linha de comando (CLIs).
+
+Navegadores (partes do Firefox foram reescritas em Rust).
+
+Criação de contratos inteligentes e blockchains, como na Solana.
+
+Desenvolvimento de servidores e APIs com frameworks como Actix e Rocket.
+
+Conclusão
+
+Rust tem se mostrado uma linguagem promissora e com potencial para substituir linguagens tradicionais em várias áreas, especialmente onde performance e segurança são essenciais. Apesar de exigir um certo esforço para aprender, quem investe tempo em Rust costuma ter um retorno positivo, tanto em projetos pessoais quanto no mercado de trabalho.
